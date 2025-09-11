@@ -78,7 +78,7 @@ const Cart = () => {
         if (!data.success) return toast.error("Failed to create order");
 
         const options = {
-          key: 'rzp_test_R8gShkaatoTiCl',
+          key: import.meta.env.VITE_RAZORKEY ,
           amount: data.order.amount,
           currency: "INR",
           name: "Green Cart",
